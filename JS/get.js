@@ -1,3 +1,4 @@
+// Open bars
 let bars = document.querySelector(".bars");
 let links = document.querySelector(".links");
 let allLinks = document.querySelectorAll(".link");
@@ -8,16 +9,23 @@ bars.onclick = function () {
   bars.children[2].classList.toggle("th3");
   links.classList.toggle("open");
 };
-
 allLinks.forEach((ele) => {
   ele.onclick = () => {
-  ele.parentElement.classList.remove("open")
-  bars.children[0].classList.remove("f1");
-  bars.children[1].classList.remove("s2");
-  bars.children[2].classList.remove("th3");
-  }
+    ele.parentElement.classList.remove("open");
+    bars.children[0].classList.remove("f1");
+    bars.children[1].classList.remove("s2");
+    bars.children[2].classList.remove("th3");
+  };
 });
 
-// link.onclick = () => {
-//     links.classList.remove("open");
-// };
+// Button up
+let up = document.querySelector(".up");
+window.onscroll = () => {
+  this.scrollY >= 2000 ? up.classList.add("show") : up.classList.remove("show");
+};
+up.onclick = () =>{
+  window.scrollTo({
+    top: 0,
+    behavior:"smooth",
+  })
+}

@@ -51,6 +51,24 @@ ul {
 }
 /* End Global Rules */
 /* Start Componants */
+.up{
+  position: fixed;
+  z-index: 100;
+  right: -50px;
+  bottom: -50px;
+  background-color: var(--second-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.up.show{
+  right: 15px;
+  bottom: 15px;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
