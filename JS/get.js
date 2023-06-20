@@ -1,3 +1,10 @@
+let scroll = document.querySelector(".scroll");
+let heightScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+console.log(heightScroll);
+window.addEventListener("scroll", () => {
+  let scrollTop = document.documentElement.scrollTop;
+  scroll.style.width = `${scrollTop / heightScroll * 100}%`
+})
 // Open bars
 let bars = document.querySelector(".bars");
 let links = document.querySelector(".links");

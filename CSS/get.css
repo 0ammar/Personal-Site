@@ -51,6 +51,14 @@ ul {
 }
 /* End Global Rules */
 /* Start Componants */
+.scroll{
+  position: fixed;
+    top: 58px;
+    background-color: rgb(215, 164, 164);
+    width: 0;
+    height: 2px;
+    z-index: 100;
+}
 .up{
   position: fixed;
   z-index: 100;
