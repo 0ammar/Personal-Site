@@ -51,15 +51,15 @@ ul {
 }
 /* End Global Rules */
 /* Start Componants */
-.scroll{
+.scroll {
   position: fixed;
-    top: 58px;
-    background-color: rgb(215, 164, 164);
-    width: 0;
-    height: 2px;
-    z-index: 100;
+  top: 58px;
+  background-color: rgb(215, 164, 164);
+  width: 0;
+  height: 2px;
+  z-index: 100;
 }
-.up{
+.up {
   position: fixed;
   z-index: 100;
   right: -50px;
@@ -73,7 +73,7 @@ ul {
   cursor: pointer;
   transition: var(--main-transition);
 }
-.up.show{
+.up.show {
   right: 15px;
   bottom: 15px;
 }
@@ -273,7 +273,7 @@ ul {
   position: relative;
   background-image: url(../Images/landing.jpg);
   background-color: var(--main-color);
-  min-height:100vh;
+  min-height: 100vh;
 }
 .landing .text {
   position: absolute;
@@ -881,7 +881,7 @@ ul {
   font-size: 20px;
   transition: var(--main-transition);
 }
-.footer .social .instagram{
+.footer .social .instagram {
   transition: var(--main-transition);
 }
 .footer .social .facebook:hover {
