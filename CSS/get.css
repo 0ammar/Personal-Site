@@ -174,6 +174,7 @@ ul {
   display: block;
   position: absolute;
   content: " ";
+  border-radius: 10px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -257,12 +258,11 @@ ul {
     align-items: center;
     flex-basis: 80px;
     padding: 10px 20px;
-    margin: 8px 0;
+    margin: 15px 0 0;
     width: 100%;
     border: 2px solid white;
     border-radius: 20px;
   }
-
   .header .holder .open {
     transform: translateY(0%);
   }
@@ -840,7 +840,7 @@ ul {
 }
 .footer .logo {
   position: relative;
-  z-index: 101;
+  z-index: 1;
   font-size: 33px;
 }
 .footer .logo span {
